@@ -23,6 +23,7 @@ html {
  */
 
 body {
+
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover cover cover cover cover cover; 
@@ -162,7 +163,7 @@ dfn {
  */
 
 mark {
-  background-color: #ff0;
+  background-color: transparent;
   color: #000;
 }
 
@@ -446,5 +447,11 @@ template {
  */
 
 [hidden] {
-  display: none;
+  display: none; 
 }
+
+#powerups {
+  text-align: center;
+    
+}
+

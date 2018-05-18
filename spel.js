@@ -14,10 +14,10 @@ var clickValue = 1;
 var wormClicks = 0;
 var bank = 0;
 var wormCost = 15;
-var sillCost = 45;
+var sillCost = 75;
 var sill = null;
 var lax = null;
-var laxCost = 150;
+var laxCost = 250;
 
 
 
@@ -25,6 +25,7 @@ var laxCost = 150;
 scoreText.textContent = "Points: 0";
 wormKnapp.textContent = "worm: " + Math.floor(wormCost);
 sillKnapp.textContent = "sill: " + Math.floor(sillCost);
+laxKnapp.textContent = "lax: " + Math.floor(laxCost);
 
 /* click event + logic */
 button.addEventListener("click", function() {
@@ -43,7 +44,7 @@ scoreDiv.appendChild(scoreText); // fäst p elementet i score diven.
 wormKnapp.addEventListener("click", function() {
 	if (bank >= wormCost) {
 		console.log("köpte worm");
-		clickValue += 0.5;
+		clickValue += 0.1;
 		bank -= wormCost;
 		wormCost *= 1.5;
 		powerText.textContent = "Med lite mask ska de nog gå fortare att få upp lire fisk! :-P";
@@ -76,12 +77,13 @@ laxKnapp.addEventListener("click", function(){
 	if (bank >= laxCost) {
 		console.log("Stor LaxN");
 		bank -=  laxCost;
-		clickValue *= 2;
+		clickValue *= 77;
 		laxCost *= 7;
-		powerText.textContent = "Nämen Jisses vilken jäkla baddare! En Stor LaxN!!!";
+		powerText.textContent = "Nämen Jisses sicken jäkla baddare! Stor LaxN!!! >:D";
 		scoreText.textContent = "Points: " + Math.floor(bank);
 		laxKnapp.textContent = "lax: " + Math.floor(laxCost);
 		} else {
-			powerText.textContent = "Du hast nicht das roden med das laxenfaust!";
+			powerText.textContent = "Du hast nicht das roden med das laxenfaust! D:<";
 		}	
-})
+}, true)
+

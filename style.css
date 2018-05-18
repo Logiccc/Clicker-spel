@@ -28,9 +28,7 @@ p {
 	font-size: 2em;
 }
 
-.top {
-	border-bottom: 1px solid grey;
-}
+
 
 .menu ul {
 	margin: 0px;
@@ -48,9 +46,7 @@ p {
 	text-decoration: none;
 }
 
-.menu a:hover {
-	border-bottom: 2px solid grey;
-}
+
 
 article {
 	height: 100vh;
@@ -64,19 +60,65 @@ article {
 #score {
 	font-size: 2em;
 }
+#clickerbutton:active{
+	width: 400px;
+	height: 400px;
+	background-size: 100%;
 
+}
+#clickerbutton:hover{
+	background-size: 101%
+	background-position: center center;
+	width: 400px;
+	height: 400px;
+
+}
 #clickerbutton {
 	font-size: 6em;
 	width:400px;
 	height:400px;
-	background-color: red;
+	border: 0;
+	background-image: url(hejsan.png);
+	background-position: center center;
+	background-color: transparent;
+
+	background-size: 60%;
+	background-repeat: no-repeat;
 }
 
-#clickerbutton:active {
-	transition: border 1s;
-	background-color: rgba(255,0,0,1);
-	border: 80px solid black;
-}
-#clickerbutton:focus {
+b
+#clickerbutton:focus, #worm:focus, #sill:focus, #lax:focus{
+
 	outline: 0px;
+
+}
+
+#powerUps, #worm, #lax, #sill{
+
+	margin-left: 121px;
+    margin-top: 1px;
+    height: 90px;   
+    border: none;
+    color: white;   
+    font-size:14px;
+    font-weight:700;
+    marin: 0 auto;
+}
+#powerUps {
+	background: transparent;
+}
+#worm, #lax, #sill {
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+	border: solid black;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	font-size: 1.275em;
+
+}
+
+#score {
+	color: white;
 }
